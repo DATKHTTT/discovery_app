@@ -13,6 +13,17 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return AppBarContainerWidget();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            child: AppBarContainerWidget(),
+          ),
+          
+        ],
+      )
+    );
   }
 }
